@@ -1,0 +1,22 @@
+<ion-menu side="start" content-id="main2" menu-id="menu2" id="menu2">
+  <ion-content class="ion-padding">
+    <p>Page Two Menu</p>
+  </ion-content>
+</ion-menu>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="main2" class="ion-padding">
+  Page Two
+  <ion-button (click)="openStartMenu('start')" expand="block">Open "start" Menu</ion-button>
+  <ion-button (click)="openStartMenu('menu2')" expand="block">Open "#menu2" Menu</ion-button>
+  <ion-button (click)="openStartMenu('start', true)" expand="block">Enable and Open "start" Menu</ion-button>
+  <ion-button (click)="openStartMenu('menu2', true)" expand="block">Enable and Open "#menu2" Menu</ion-button>
+  <ion-button routerLink="/page-three" expand="block">Go to Page Three</ion-button>
+</ion-content>

@@ -1,16 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { IonicModule, MenuController } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
+import { IonicModule, MenuController} from '@ionic/angular';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-page-three',
+  templateUrl: './page-three.page.html',
+  styleUrls: ['./page-three.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, RouterLink],
 })
-export class HomePage {
+export class PageThreePage {
   constructor(private menuCtrl: MenuController) {}
 
   openStartMenu(idOrSide: string, enable: boolean = false) {
