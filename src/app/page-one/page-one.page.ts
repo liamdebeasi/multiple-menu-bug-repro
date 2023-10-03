@@ -4,13 +4,13 @@ import { IonicModule, MenuController } from '@ionic/angular';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-page-one',
+  templateUrl: 'page-one.page.html',
+  styleUrls: ['page-one.page.scss'],
   standalone: true,
   imports: [IonicModule, CommonModule, RouterLink],
 })
-export class HomePage {
+export class PageOnePage {
   constructor(private menuCtrl: MenuController) {}
 
   openStartMenu(idOrSide: string, enable: boolean = false) {
